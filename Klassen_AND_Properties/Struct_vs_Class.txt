@@ -1,0 +1,10 @@
+﻿Bei ner Klasse wird beim zuweisen auf eine andere Variable die Referenz auf das erste Objekt kopiert:
+ Point_C pc1 = new Point_C { x = 11, y = 15 }, pc2;
+ pc2 = pc1;
+ 
+ Beide die selbe Referenz => Änderungen werden also in beiden Onjekten übernommen
+ 
+==============================
+ Bei STRUCT nicht!
+ Point_S ps1 = new Point_S { x = 21, y = 25 }, ps2;
+  ps2 = ps1; // ps2 bekommt zwar die Werte aber eine andere Referenz => Änderung bleiben beim jeweiligen Objekt
