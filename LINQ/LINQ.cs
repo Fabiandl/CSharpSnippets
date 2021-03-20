@@ -12,7 +12,7 @@ namespace LINQ
             //Randoms
             Random random = new Random();
                                                     //20 Plätze             //für jedes der 20 ein rdm
-            IEnumerable<int> alle = Enumerable.Range(1, 20).Select(n => random.Next(0, 100));
+            IEnumerable<int> alle = Enumerable.Range(1, 20).Select(n => random.Next(0, 100)).OrderBy(n => n);
                                                 //Condition
             IEnumerable<int> ungerade = alle.Where(n => n % 2 != 0);
             
