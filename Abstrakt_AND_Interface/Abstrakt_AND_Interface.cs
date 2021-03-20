@@ -54,8 +54,5 @@ namespace Abstrakt_AND_Interface
             }
         }
         
-        public static void Main(string[] args)
-        {
-        }
     }
 }

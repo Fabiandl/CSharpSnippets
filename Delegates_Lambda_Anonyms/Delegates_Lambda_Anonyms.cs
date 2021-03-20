@@ -11,6 +11,7 @@ namespace Delegates_Lambda_Anonyms
         delegate double F2(double d1, double d2, double d3);
         delegate bool F3(int x, double a, double b);
 
+        //Bekommt 2 double und gibt int zurück
         private static Func<double, double, int> f4;
         
         public static void Main(string[] args)
@@ -40,7 +41,7 @@ namespace Delegates_Lambda_Anonyms
             
             //======================= LAMBDA-SPECIAL-STUFF
             //Vergleich in kurz für Sort
-            Comparison<String> sortBy = (a, b) => (a.Length > b.Length) ? -1 : 1;
+            Comparison<string> sortBy = (a, b) => (a.Length > b.Length) ? -1 : 1;
             
             var words = new List<string> {"This", "is", "one", "simple", "list."};
             words.Sort(sortBy);

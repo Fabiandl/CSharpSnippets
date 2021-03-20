@@ -39,6 +39,7 @@ namespace KlausurSnippets
         private static void doOutStuff(out object o)
         {
             o = new object();
+            //do Stuff
         }
     }
 }

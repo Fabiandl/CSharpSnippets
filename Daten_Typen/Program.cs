@@ -33,8 +33,9 @@ namespace Daten_Typen
             double d1 = 2.0;
             double d2 = Math.Abs(d1 - 1.5);
             double d3 = Math.PI;                // a constant
-            double d4 = Math.Sin(d3);           // not declared for decimal
+            double d4 = Math.Sin(d3); // not declared for decimal
             double d5 = Math.Sqrt(d4);
+            double d7 = Math.Cos(d3);
             
             // note: some functions are defined for double only
             double d6 = 0.85;

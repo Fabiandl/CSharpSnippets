@@ -5,6 +5,7 @@
         public static void Main(string[] args)
         {
             Person person1 = new Person();
+                                            //properties direkt füllen
             Person person2 = new Person() {Name = "Fabian", ID = 4};
             person1.Name = "Dominik";
             person1.ID = 2;
@@ -13,7 +14,7 @@
     
     class Person
     {
-        // public private protected internal
+        // public, private, protected, internal
         private string name;
 
         // property

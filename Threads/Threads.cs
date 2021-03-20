@@ -59,7 +59,7 @@ namespace Threads
                 int b = a + parts;
                 if (i == 3)
                 {
-                    b += 1;
+                    b += 1;     
                 }
 
                 Console.WriteLine($"Thread {i} arbeitet von {a} bis ausschließlich {b}");

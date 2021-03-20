@@ -16,7 +16,7 @@ namespace Cast_Implicit_Explicit
 
             // implicit case
             A a1 = new A(2.0);
-            double d = a1;
+            double d = a1; // kein Cast auf double
             bool b = (12.2 == a1); // Achtung!
             Console.WriteLine($"2) a1.d={a1.d}");
             A a2 = 23;
@@ -41,12 +41,12 @@ namespace Cast_Implicit_Explicit
                 this.d = d;
             }
 
-            public static implicit operator double(A a)
+            public static implicit operator double(A a)     //impliziet A ZU double
             {
                 return a.d;
             } // kein Datenverlust zu befürchten
 
-            public static implicit operator A(double d)
+            public static implicit operator A(double d)    //implizit von double ZU A
             {
                 return new A(d);
             }
@@ -61,12 +61,12 @@ namespace Cast_Implicit_Explicit
                 this.d = d;
             }
 
-            public static explicit operator double(B b)
+            public static explicit operator double(B b)     //explizit B ZU double
             {
                 return b.d;
             }
 
-            public static explicit operator B(double d)
+            public static explicit operator B(double d)     //explizit von double ZU B
             {
                 return new B(d);
             }

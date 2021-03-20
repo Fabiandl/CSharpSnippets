@@ -27,7 +27,7 @@ namespace Null_Pruefen
             //Falls numbers == null => mach neue Liste
             numbers ??= new List<int>();
             
-            //int ist jetzt NULL-Able
+            //int "i" ist jetzt NULL-Able
             int? i = null;
             numbers.Add(i ??= 17); //Falls null => 17
         }

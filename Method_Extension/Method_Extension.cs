@@ -13,8 +13,8 @@ namespace Method_Extension
             string res = text.doSomeStuff();
             Console.WriteLine(res);
         }
-
-        public static string doSomeStuff(this string str)
+    //                                    V ---- Indicator for Extension
+    public static string doSomeStuff(this string str)
         {
             return $"{str}!!!";
         }
