@@ -31,6 +31,9 @@ namespace LINQ
             string[] lines = File.ReadAllLines(fileName);
             var xmlWaffles = lines.Where(n => n.Contains("name")).Where(line => line.Contains("Waffles")).Select(n => n.Substring(n.IndexOf(">")+1,n.IndexOf("Waffles")- n.IndexOf(">")+6));
             Console.WriteLine($"Alle Waffles : {string.Join(",",xmlWaffles)}");
+
+            lines.OrderBy(n => n);
+            lines.OrderByDescending(n => n);
         }
     }
 }
